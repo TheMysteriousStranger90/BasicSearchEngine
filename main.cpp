@@ -63,7 +63,6 @@ void AddDocument(vector<vector<string>> &documents, const set<string> &stop_word
 }
 
 set<string> ParseQuery(const string &text, const set<string> &stop_words) {
-    //set<string> query_words;
     vector<string> tmp = SplitIntoWordsNoStop(text, stop_words);
     set<string> query_words(tmp.begin(), tmp.end());
     return query_words;
